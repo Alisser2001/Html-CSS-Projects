@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+/*https://republicanaradio.com/wp-content/uploads/2021/09/Cursos_Gratis_y_virtuales_para_estudiantes_de_Ingenieria_de_sistemas_URepublicacanaRadio_emisora_radio_universitaria_estudiar_bogota_colombia_imag1.jpg */
+
+:root {
+  --color-font: #FFFFFF;
+  --color-background: #EDCF68;
+  --color-form: rgba(0, 15, 30, 0.6);
+  --color-submit: rgba(255, 120, 0, 0.9)
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--color-font);
+  margin: 0 auto;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-background);
+  background-image: linear-gradient(
+      180deg,
+      rgba(219, 223, 245,0.2),
+      rgba(84, 100, 186, 0.5)
+    ),
+    url(https://www.crearuncurriculum.com/wp-content/uploads/2020/09/Ingeniero-informa%CC%81tico-1024x683.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 500;
+  line-height: 1.8;
+  font-size: 2.6rem;
+}
+p {
+  font-size: 1.1rem;
+}
+h1,
+p {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0 0.5rem 0 0rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  line-height: 10px;
+}
+input,
+textarea {
+  border-radius: 0.25%; 
+}
+textarea {
+  width: 100%;
+}
+button {
+  border-width: 1px;
+  border-color: rgba(84, 100, 186, 0.5);
+  border-radius: 0.25%; 
+}
+
+.container {
+  width: 100%;
+  margin: 5.125rem auto 2.125rem auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 610px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+}
+
+.text-center {
+  text-align: center;
+  background-color: var(--color-form);
+  padding: 1rem;
+}
+
+.clue {
+  margin-left: 0.2rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+
+
+form {
+  background: var(--color-form);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.2rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 0.8rem auto;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding: 0.27rem 0.3rem 0.27rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(84, 100, 186, 0.5);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: rgba(84, 100, 186, 0.5);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-submit);
+  color: #ffffff;
+  border-radius: 0.25px;
+  cursor: pointer;
+}
+</style>
+
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Formulario sobre proyección laboral</h1>
+      <p id="description" class="description text-center">Gracias por llenar el formulario.<br> Esto no le tomará más de 5 minutos.<br> Sólo registraremos sus respuestas sobre su proyección laboral en la carrera de ingeniería de sistemas.</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Ingresa tu nombre"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email: </label>
+        <input
+               type="email"
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder="Ingresa tu email"
+               required
+               />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Edad: <span class="clue">(Opcional)</span></label>
+          <input
+                 type="number"
+                 name="age"
+                 id="number"
+                 min="15"
+                 max="99"
+                 class="form-control"
+                 placeholder="Edad"
+        />
+      </div>
+      <div class="form-group">
+        <p>¿Actualmente puedes dedicarte completamente a estudiar?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Selecciona una opción</option>
+          <option value="Estudiante">Estudio tiempo completo</option>
+          <option value="Estudiante-doble">Estudio varias cosas a la vez</option>
+          <option value="Estudiante-trabajo">Estudio la mayor parte del tiempo y trabajo un poco</option>
+          <option value="Estudiante+trabajo">Estudio y trabajo medio tiempo</option>
+          <option value="Sin-Respuesta">Prefiero no responder</option>
+          <option value="Otro">Otro...</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <p>¿Crees que logres terminar la carrera?</p>
+        <label>
+          <input
+            name="expectativas"
+            value="Absolutamente"
+            type="radio"
+            class="input-radio"
+            checked
+          />Absolutamente</label
+        >
+        <label>
+          <input
+            name="expectativas"
+            value="Es muy probable"
+            type="radio"
+            class="input-radio"
+          />Es muy probable</label
+        >
+  
+        <label
+          ><input
+            name="expectativas"
+            value="Quizá"
+            type="radio"
+            class="input-radio"
+          />Quizá</label
+        >
+        <label
+          ><input
+            name="expectativas"
+            value="Es poco probable"
+            type="radio"
+            class="input-radio"
+          />Es poco probable</label
+        >
+        <label
+          ><input
+            name="expectativas"
+            value="No-respuesta"
+            type="radio"
+            class="input-radio"
+          />Prefiero no responder</label
+        >
+      </div>
+      
+      <div class="form-group">
+        <p>
+          ¿Qué area de trabajo en ingeniería de sistemas te atrae más?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Seleccione una opción</option>
+          <option value="robotica">Robótica</option>
+          <option value="seguridad">Seguridad informática</option>
+          <option value="multimedia">Multimedia</option>
+          <option value="infraestructura">Infraestructura informática</option>
+          <option value="arquitectura">Arquitectura de software</option>
+          <option value="IA">Inteligencia artificial IA</option>
+          <option value="Otra">Otra...</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <p>
+          ¿Qué area profesional representa un mayor desafío en tu pensum?
+          <span class="clue">(Puedes elegir más de una opción)</span>
+        </p>
+  
+        <label
+          ><input
+            name="desafio"
+            value="ciencia-computacional"
+            type="checkbox"
+            class="input-checkbox"
+          />Ciencias de la computación</label
+        >
+        <label>
+          <input
+            name="desafio"
+            value="algoritmia-programación"
+            type="checkbox"
+            class="input-checkbox"
+          />Algoritmia y programación</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="matematicas-discretas"
+            type="checkbox"
+            class="input-checkbox"
+          />Matematicas discretas</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="ingenieria-computacional"
+            type="checkbox"
+            class="input-checkbox"
+          />Ciencia e ingeniería computacional</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="ingenieria-redes"
+            type="checkbox"
+            class="input-checkbox"
+          />Ingenieria computacional y redes</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="arquitectura-maquinas"
+            type="checkbox"
+            class="input-checkbox"
+          />Arquitectura de maquinas y sistemas operativos</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="comunicacion-datos"
+            type="checkbox"
+            class="input-checkbox"
+          />Comunicación de datos</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="ingenieria-software"
+            type="checkbox"
+            class="input-checkbox"
+          />Ingeniería de software</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="administracion-informacion"
+            type="checkbox"
+            class="input-checkbox"
+          />Administración de la información</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="elementos-sociales-profesionales"
+            type="checkbox"
+            class="input-checkbox"
+          />Elementos sociales y profesionales</label
+        >
+        <label
+          ><input
+            name="desafio"
+            value="cursos-adicionales"
+            type="checkbox"
+            class="input-checkbox"
+          />Cursos adicionales</label
+        >
+      </div>
+      
+      <div class="form-group">
+        <p>¿Tienes algún comentario sobre tu experiencia hasta ahora en la carrera?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comentario"
+          placeholder="Ingresa tu comentario aquí... (Opcional)"
+        ></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Envíar
+        </button>
+      </div>
+    </form>
+  </div>
+  
+</html>
