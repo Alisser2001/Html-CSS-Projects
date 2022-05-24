@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<style>
+header {
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2vw;
+}
+
+#nav-head {
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 190, 51, 0.5)
+    ),
+    url(https://img.freepik.com/foto-gratis/muro-hormigon-gris-claro_53876-89532.jpg?t=st=1652479480~exp=1652480080~hmac=57553abcbd6df3523345ad1bc2e93e98f74e7473b160bb8d14d258534421c327&w=826);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main, nav {
+  font-family: Cambria, Georgia, serif, Candara;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+nav {
+  flex-direction: column;
+  min-width: 22vw;
+  padding: 1vw 1vw 2vw 1vw;
+  border: 0.5px solid rgba(0, 0, 0, 0.9);
+  position: fixed;
+  overflow: scroll;
+  height: 100%;
+  width: 20%;
+}
+
+@media (max-width: 560px) {
+  nav {
+    position: relative;
+  }
+}
+
+main{
+  padding: 1vw 2vw 2vw 26vw;
+}
+
+@media (max-width: 460px) {
+  .main-section {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+#nav-text {
+  padding: 0vw 1vw 1vw 1vw;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#list-header {
+  list-style: none;
+  display: inline;
+  width: 100%;
+}
+
+p {
+  padding-bottom: 0.5vw;
+}
+
+a {
+  display: block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+  padding-top: 10px; 
+}
+
+.nav-link:hover {
+  color: rgba(255, 85, 0, 0.9);
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.footer-link {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.footer-link:hover {
+  color: rgba(255, 85, 0, 0.9);
+}
+
+h4 {
+  font-family: Cambria, Georgia, serif, Candara;
+  font-size: 1.3rem;
+}
+</style>
+
+<nav id="navbar">
+    <header id="nav-head">Documentación de Python</header>
+    <ul id="list-header">
+      <li id="nav-text"><a class="nav-link" href="#Introduccion">Introducción</a></li>
+      <li id="nav-text">
+        <a class="nav-link" href="#Elementos"
+          >Elementos fundamentales</a
+        >
+      </li>
+      <li id="nav-text">
+        <a class="nav-link" href="#Python2_andPython3">Python 2 y Python 3</a>
+      </li>
+      <li id="nav-text"><a class="nav-link" href="#Hola_Mundo">¡Hola mundo...!</a></li>
+      <li id="nav-text"><a class="nav-link" href="#Variables">Variables</a></li>
+      <li id="nav-text">
+        <a class="nav-link" href="#Declarando_variables">Declarando variables</a>
+      </li>
+      <li id="nav-text"><a class="nav-link" href="#Variable_Alcance">Alcance de una variable</a></li>
+      <li id="nav-text"><a class="nav-link" href="#Global_variables">Variables globales</a></li>
+      <li id="nav-text"><a class="nav-link" href="#Constantes">Constantes</a></li>
+      <li id="nav-text">
+        <a class="nav-link" href="#CiclosIf_Else">Ciclos if... Else</a>
+      </li>
+      <li id="nav-text"><a class="nav-link" href="#Ciclos_While">Ciclos while</a></li>
+      <li id="nav-text">
+        <a class="nav-link" href="#Declaracion_Funciones"
+          >Declaración de funciones</a
+        >
+      </li>
+      <li id="nav-text"><a class="nav-link" href="#Referencias">Referencias</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduccion">
+      <header>Introducción</header>
+      <article>
+        <p>
+          Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, ejemplos: Instagram, Netflix, Panda 3D, entre otros. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.
+        </p>
+  
+        <p>
+          Administrado por Python Software Foundation, posee una licencia de código abierto, denominada Python Software Foundation License.3​ Python se clasifica constantemente como uno de los lenguajes de programación más populares.
+        </p>
+        
+        <p>
+          Los usuarios de Python se refieren a menudo a la filosofía de Python que es bastante análoga a la filosofía de Unix. El código que siga los principios de Python se dice que es "pythónico". Estos principios fueron descritos por el desarrollador de Python Tim Peters en El Zen de Python: 
+        </p>
+        <ul>
+          <li>
+            Bello es mejor que feo.
+          </li>
+          <li>
+            Explícito es mejor que implícito.
+          </li>
+          <li>
+            Simple es mejor que complejo.
+          </li>
+          <li>
+            Complejo es mejor que complicado.
+          </li>
+          <li>
+            Plano es mejor que anidado.
+          </li>
+          <li>
+            Disperso es mejor que denso.
+          </li>
+          <li>
+            La legibilidad cuenta.
+          </li>
+          <li>
+            Los casos especiales no son tan especiales como para quebrantar las reglas.
+          </li>
+          <li>
+            Lo práctico gana a lo puro.
+          </li>
+          <li>
+            Los errores nunca deberían dejarse pasar silenciosamente, a menos que hayan sido silenciados explícitamente.
+          </li>
+          <li>
+            Frente a la ambigüedad, rechaza la tentación de adivinar.
+          </li>
+          <li>
+            Debería haber una —y preferiblemente solo una— manera obvia de hacerlo.
+          </li>
+          <li>
+            Aunque esa manera puede no ser obvia al principio a menos que usted sea holandés.
+          </li>
+          <li>
+            Ahora es mejor que nunca,  aunque nunca es a menudo mejor que ya mismo.
+          </li>
+          <li>
+            Si la implementación es difícil de explicar, es una mala idea.
+          </li>
+          <li>
+            Si la implementación es fácil de explicar, puede que sea una buena idea.
+          </li>
+          <li>
+            Los espacios de nombres (namespaces) son una gran idea ¡Hagamos más de esas cosas!
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Elementos">
+      <header>Elementos fundamentales</header>
+      <article>
+        <p>Python está destinado a ser un lenguaje de fácil lectura. Su formato es visualmente ordenado y, a menudo, usa palabras clave en inglés donde otros idiomas usan puntuación. A diferencia de muchos otros lenguajes, no utiliza corchetes para delimitar bloques y se permiten puntos y coma después de las declaraciones, pero rara vez, si es que alguna vez, se utilizan. Tiene menos excepciones sintácticas y casos especiales que C o Pascal.</p>
+        
+        <p>Diseñado para ser leído con facilidad, una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos !, || y && en Python se escriben not, or y and, respectivamente. Curiosamente el lenguaje Pascal es junto con COBOL uno de los lenguajes con muy clara sintaxis y ambos son de la década del 70. La idea del código claro y legible no es algo nuevo.</p>
+        
+        <p>El contenido de los bloques de código (bucles, funciones, clases, etc.) es delimitado mediante espacios o tabuladores, conocidos como indentación, antes de cada línea de órdenes pertenecientes al bloque. Python se diferencia así de otros lenguajes de programación que mantienen como costumbre declarar los bloques mediante un conjunto de caracteres, normalmente entre llaves {}. Se pueden utilizar tanto espacios como tabuladores para sangrar el código, pero se recomienda no mezclarlos.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Python2_andPython3">
+      <header>Python 2 y Python 3</header>
+      <article>
+        <p>
+          Actualmente existen dos grandes versiones de Python que son la 2.x y la 3.x. Aunque se traten de versiones del mismo lenguaje, son tan distintas que podríamos llegar a considerarlos como lenguajes de programación totalmente aparte, aunque poseen sus similitudes también.</p>
+        <p>
+          Si quieres aprender a programar con este lenguaje probablemente te preguntes con qué versión deberías empezar. Lo más recomendable es aprender Python 3 y esto tiene sus razones de ser. Por un lado la versión 2.7 llegó a su fin de ciclo en el año 2020, y no habrá una versión 2.8. Esto no significa que no se pueda utilizar más, simplemente que no va a recibir más actualizaciones. A parte, las librerías más populares disponibles en Python ya están adaptadas a la versión 3.0 del lenguaje. </p>
+        <p>
+          Por otro lado, también hay que tener en cuenta que quizás acabes trabajando en una empresa que ya tenga código desarrollado en Python 2 que se tenga que mantener; con lo que conocer algunos detalles de la versión 2.x también te puede ser útil. 
+          Aquí algunas de las diferencias más significativas entre las dos versiones: 
+        </p>
+        <ul>
+          <li>
+            Imprimir (sentencia print)
+          </li>
+          <li>
+            División de números enteros
+          </li>
+          <li>
+            Módulo __future__
+          </li>
+          <li>
+            Funciones xrange y range
+          </li>
+          <li>
+            Iterar un diccionario
+          </li>
+          <li>
+            Función next() y método .next()
+          </li>
+          <li>
+            Comparación de tipos
+          </li>
+          <li>
+            Función input()
+          </li>
+          <li>
+            Cadenas de texto Unicode
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Hola_Mundo">
+      <header>¡Hola mundo...!</header>
+      <article>
+        <p>Python es un lenguaje muy simple y tiene una sintaxis muy sencilla. Alienta a los programadores a programar sin código repetitivo (preparado). La directiva más simple en Python es la directiva "imprimir": simplemente imprime una línea (y también incluye una nueva línea, a diferencia de C).</p>
+        <p>Hay dos versiones principales de Python, Python 2 y Python 3. Python 2 y 3 son bastante diferentes. Por ejemplo, una diferencia entre Python 2 y 3 es la print declaración. En Python 2, la instrucción "imprimir" no es una función y, por lo tanto, se invoca sin paréntesis. Sin embargo, en Python 3, es una función y debe invocarse entre paréntesis.
+  
+  Para imprimir una cadena en Python 3, simplemente escriba:</p>
+        <code>
+          print("¡Hola mundo...!")
+        </code>
+        <p>Como se puede observar, a comparación de otros lenguajes de programación, Python no necesita ";" para indicar la terminación de cada linea de código.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>
+        Python está completamente orientado a objetos y no está "escrito estáticamente". No necesita declarar variables antes de usarlas, o declarar su tipo. Cada variable en Python es un objeto.</p>
+    </section>
+    <section class="main-section" id="Declarando_variables">
+      <header>Declarando variables</header>
+      <article>
+        <p>Con la flexibilidad que ofrece Python, usted sólo deberá aprender a declarar dos tipos de variables que englobaran a todas las demas: Variables tipo número y variables tipo texto.</p>
+        <h4>Tipo número</h4>
+        <p>
+          Python admite dos tipos de números: enteros (números enteros) y números de coma flotante (decimales). Para declarar la variable, escribimos: </P>
+      <code>num = 7</code>
+      <p>O si se trata de un decimal:</p>
+      <code>num = 7.434</code>
+      <p>
+        Luego, con la función print, mostramos la variable por consola: 
+        </p>
+      <code>Print (num)</code>
+      <h4>Tipo texto</h4>
+        <p>
+          Las cadenas se definen con comillas simples o comillas dobles. La diferencia entre los dos es que el uso de comillas dobles facilita la inclusión de apóstrofes (mientras que estos terminarían la cadena si se usan comillas simples); hay variaciones adicionales en la definición de cadenas que facilitan la inclusión de cosas como barras invertidas y caracteres Unicode.
+          Para declarar la variable, escribimos:
+        </p>
+      <code>cadena = "Hola mundo"</code> 
+      <p>
+        Luego, con la función print, mostramos la variable por consola: 
+      </p>
+      <code>Print(cadena)</code>
+      <p>
+        Cabe resaltar que, aunque no se declaren los tipos de variables, el programa no podrá realizar operaciones entre ellas si no son del mismo tipo; por ejemplo, si intentamos sumar una variable tipo número y una tipo texto, el código nos arrojará un error
+      </p>
+      </article>
+    </section>
+    <section class="main-section" id="Variable_Alcance">
+      <header>Alcance de una variable</header>
+      <article>
+        <p>
+          Las variables en Python son locales por defecto. Esto quiere decir que las variables definidas y utilizadas en el bloque de código de una función, sólo tienen existencia dentro de la misma, y no interfieren con otras variables del resto del código.
+        </p>
+        <p>
+  A su vez, las variables existentes fuera de una función, no son visibles dentro de la misma.
+  En caso de que sea conveniente o necesario, una variable local puede convertirse en una variable global declarándola explícitamente como tal con la sentencia global.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Global_variables">
+      <header>Variables globales</header>
+      <article>
+        <p>
+          Son aquellas variables que se mantienen para todo el bloque de código. Eso significa que los identificadores listados son interpretados como globales. Eso podría ser imposible asignar a una variable global sin la sentencia global, aunque las variables libres pueden referirse a globales sin ser declaradas globales.
+        </p>
+        <p>
+          Para crear estas variables, se procede creando la variable primero:
+        </p>
+        <code>variable1 = "variable original"</code>
+        <p>
+          Después, se llama a la función que nos permitirá tratar la variable creada como global:
+        </p>
+  <code>def variable_global(): <br>
+    global variable1 <br>
+    variable1 = "variable global modificada" </code>
+        <p>De este modo, vaiable1 será de uso global para todo el bloque de código</p>
+      </article>
+    </section>
+    <section class="main-section" id="Constantes">
+      <header>Constantes</header>
+      <article>
+        <p>
+          Una constante es un tipo de variable la cual no puede ser cambiada. Eso es muy de ayuda pensar las constantes como contenedores que contienen información el cual no puede ser cambiado después.
+        </p>
+        <p>
+          En Python, las constantes son usualmente declaradas y asignadas en un módulo. Aquí, el módulo significa un nuevo archivo que contiene variables, funciones, etc; el cual es importada en el archivo principal. Dentro del módulo, las constantes son escritas en letras MAYÚSCULAS y separadas las palabras con el carácter underscore_.
+        </p>
+        <p>
+          Por ejemplo, crea un archivo llamado constantes.py con el siguiente contenido:
+        </p>
+  <code>PORT_DB_SERVER = 3307 <br>
+  USER_DB_SERVER = "root" <br>
+  PASSWORD_DB_SERVER = "123456" <br>
+    DB_NAME = "nomina" <br></code>
+        <p>
+          El contenido de este archivo puede ser importado luego y utilizado en el archivo main de su código principal.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="CiclosIf_Else">
+      <header>Ciclos if... Else</header>
+      <article>
+        <p>Una sentencia if en Python esencialmente dice: </p>
+  <p>
+  "Si la expresión evaluada, resulta ser verdadera(True), entonces ejecuta una vez el código en la expresión. Si sucede el caso contrario y la expresión es falsa, entonces No ejecutes el código que sigue." 
+        </p>
+        <p>
+  La sintaxis general para la sentencia if básica es como lo siguiente:
+        </p>
+        <code>if condicion: <br> ejecutar sentencia</code>
+        <p>Una sentencia if consiste en:</p>
+        <ul>
+          <li>La palabra reservada if , da inicio al condicional if.</li>
+          <li>La siguiente parte es la condición. Esta puede evaluar si la declaración es verdadera o falsa. En Python estas son definidas por las palabras reservadas (True or False).  </li>
+          <li>Paréntesis (()) Los paréntesis son opcionales, no obstante, ayudan a mejorar la legibilidad del código cuando más de una condición está presente.</li>
+          <li>Dos puntos: cuya función es separar la condición de la declaración de ejecución siguiente.</li>
+          <li>Una nueva línea, en la cual irá la condición que se debe cumplir.</li> 
+        </ul>
+        <p>
+          Por ejemplo: 
+        </p>
+        <code
+          >a = 1<br>b = 2<br><br>if b > a:<br>print("b es mayor que a")
+        </code>
+          <p>Dará como sálida en consola "b es mayor que a"<br>Ahora bien, la sintaxis de la sentancia if... Else funciona tal que así: </p>
+          <code>if condicion:<br>
+      ejecutar codigo si la condicion es True<br>
+  else:<br>
+            ejecutar codigo si la condicion es False</code>
+          <p>Una sentencia if..else en Python significa:</p>
+  <p>
+  "Cuando la expresión if se evalúa como True, entonces ejecuta el código que le sigue. Pero si se evalúa como False, entonces ejecuta el código que sigue después de la sentencia else ."
+          </p>
+          <p>
+            El código posterior a la sentencia condicional else se ejecuta sí y solo sí la primera parte, del condicional if se evalúa como False. Si tu sentencia en la condicional if se evalúa como True, será ese bloque de código el que se ejecutará y el código que sigue a else no se ejecutará nunca.
+          </p>
+          <code>a = 1<br>b = 2<br>if a > b: <br>
+      print("a es mayor que b")<br>
+  else:<br>
+            print("b es mayor que a")</code>
+          <p>Arrojará como resultado en cónsola "b es mayor que a"</p>
+      </article>
+    </section>
+    <section class="main-section" id="Ciclos_While">
+      <header>Ciclos while</header>
+      <article>
+        <p>Python utiliza el bucle while de forma similar a otros lenguajes populares. El bucle while evalúa una condición y luego ejecuta un bloque de código si la condición es verdadera. El bloque de código se ejecuta repetidamente hasta que la condición llega ser o es falsa.</p>
+        <p>La sintaxis básica es:</p>
+  
+        <code>contador = 0<br>
+  while contador < 10: <br>
+     # Ejecuta el bloque de código aquí <br>
+     # Siempre que el contador sea inferior a 10</code> 
+        <p>A continuación se muestra un ejemplo:</p>
+  
+        <code>dia = 0    <br>
+  semana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'] <br>
+  while dia < 7:
+     print("Hoy es " + semana[dia]) <br>
+          dia += 1 </code>
+        <p>Dará como sálida por consola:<br><br>"Hoy es Lunes<br>
+  Hoy es Martes<br>
+  Hoy es Miércoles<br>
+  Hoy es Jueves<br>
+  Hoy es Viernes<br>
+  Hoy es Sabado<br>
+          Hoy es Domingo"</p>
+      </article>
+    </section>
+    <section class="main-section" id="Declaracion_Funciones">
+      <header>Declaración de funciones</header>
+      <article>
+        <p>Una función te permite definir un bloque de código reutilizable que se puede ejecutar muchas veces dentro de tu programa.
+  
+  Las funciones te permiten crear soluciones más modulares y DRY para problemas complejos.
+        </p>
+        <p>
+  Si bien Python ya proporciona muchas funciones integradas como print() y len(), también puedes definir tus propias funciones para usar en tus proyectos.
+  
+  Una de las grandes ventajas de usar funciones en tu código es que reduce el número total de líneas de código en tu proyecto.</p>
+        <p>En Python, una definición de función tiene las siguientes características:</p>
+        <ul>
+          <li>La palabra clave def.</li>
+          <li>
+            Un nombre de función.
+          </li>
+          <li>
+            Paréntesis ’()’, y dentro de los paréntesis los parámetros de entrada, aunque los parámetros de entrada sean opcionales.
+          </li>
+          <li>Dos puntos ’:’.</li>
+          <li>Algún bloque de código para ejecutar.</li>
+          <li>Una sentencia de retorno (opcional).</li>
+        </ul>
+          <h4>Función sin parámetros o retorno de valores:</h4>
+          <code>def diHola():<br>
+    print("Hello!")<br><br>
+            diHola()</code>
+          <p>La última línea es la llamada a la función, 'Hello!' se muestra en la consola.</p>
+          <h4>Función con un parámetro:</h4>
+          <code>def holaConNombre(name):<br>
+    print("Hello " + name + "!")<br><br>
+            holaConNombre("Ada")</code>
+          <p>La última línea es la llamada a la función, 'Hello Ada!' se muestra en la consola.</p>
+          <h4>Función con múltiples parámetros con una sentencia de retorno:</h4>
+          <code>def multiplica(val1, val2):<br>
+    return val1 * val2<br><br>
+            multiplica(3, 5)</code>
+        <p>La última línea es la llamada a la función, muestra 15 en la consola.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Referencias">
+      <header>Referencias</header>
+      <article>
+        <ul>
+          <li>
+            <a class="footer-link"
+               href="https://www.learnpython.org/en/Welcome"
+              target="_blank"
+              >LearnPython</a
+              ></li>
+          <li>
+            <a class="footer-link"
+               href="https://www.freecodecamp.org/espanol/news/tag/python/"
+              target="_blank"
+              >FreeCodeCamp - Python</a
+              ></li>
+          <li>
+            <a class="footer-link"
+               href="https://entrenamiento-python-basico.readthedocs.io/es/latest/index.html"
+              target="_blank"
+              >COVANTEC - Python</a
+              ></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</html>
