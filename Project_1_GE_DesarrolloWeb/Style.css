@@ -1,9 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
 }
-img {
-    display: block;
+@media (max-width : 900px) {
+    .container {
+        width: 90%;
+        margin: 4% auto;
+        background-color: white;
+        border-radius: 5%;
+    }
+}
+.container {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    margin: 12% auto;
+    background-color: white;
+    border-radius: 5%;
+}
+*::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(222, 222, 222, 1);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content-main {
+    margin: 2.5em;
+}
+.img-main {
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+h1 {
+    padding-bottom: 0.8em;
+    padding-top: 1.2em;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+p {
+    text-align: center;
+    padding-bottom: 1.8em;
+}
+.price-zone {
+    background-color: rgba(254, 241, 241, 0.5);
+    border-radius: 2.5%;
+    padding: 1em;
+    margin-bottom: 1.8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button-zone {
+    margin-bottom: 1.8em;
+    padding: 0.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ofert-zone {
+    padding-left: 1.3em;
+    padding-right: 5.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+a {
+    color: rgb(95, 13, 247);
+    text-decoration: none;
+}
+button {
+    padding: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin: 0.1em;
+    border-radius: 2.5%;
+    border: none;
+    font-size: 1em;
+    font-weight: 800;
+}
+.button-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.payment-button {
+    color:white;
+    background-color: rgb(95, 13, 247);
+}
+.cancel-button {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: white;
 }

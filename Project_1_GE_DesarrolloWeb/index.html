@@ -1,38 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/Style.css">
-  <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <article>
-    <section>
-    <img src="./images/illustration-hero.svg" alt="Chica escuchando música" title="Chica escuchando música">
-    </section>
-    <section>
-      <h1>Order sumary</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="stylesheet" href="/Project_1_GE_DesarrolloWeb/Style.css">
+<div class="container">
+    <div>
+    <img class="img-main" src="./images/illustration-hero.svg" alt="Chica escuchando música" title="Chica escuchando música">
+    </div>
+    <div>
+      <h1>Order Summary</h1>
       <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-      <div>
+      <article class="price-zone">
         <img src="./images/icon-music.svg" alt="Icono de musica" title="Icono de musica">
-        <div>
-        <span>Annual plan</span>
-        <span>$59.99/year</span>
-      </div>
-      <a href="/planes">Change</a>
-      </div>
-      <button>Proceed to Payment</button>
-      <button>Cancel Order</button>
-    </section>
-  </article>
-</body>
+        <article class="ofert-zone">
+          <span>Annual plan</span>
+          <span>$59.99/year</span>
+        </article>
+        <a href="/planes">Change</a>
+      </article>
+      <article class="button-zone">
+      <button class="payment-button">Proceed to Payment</button>
+      <button class="cancel-button">Cancel Order</button>
+      </article>
+    </div>
+</div>
 </html>
