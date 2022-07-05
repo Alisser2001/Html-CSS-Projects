@@ -9,6 +9,7 @@ header {
 
 #nav-head {
   text-align: center;
+  padding-top: 1em;
 }
 body {
   display: flex;
@@ -67,6 +68,7 @@ main{
   list-style: none;
   display: inline;
   width: 100%;
+  margin-bottom: 8em;
 }
 
 p {
