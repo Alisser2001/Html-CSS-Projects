@@ -1,16 +1,5 @@
-header {
-  font-weight: bold;
-  font-size: 1.5em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 2vw;
-}
+/* Valores Base */
 
-#nav-head {
-  text-align: center;
-  padding-top: 1em;
-}
 body {
   display: flex;
   flex-direction: row;
@@ -23,11 +12,47 @@ body {
   background-size: cover;
 }
 
+p {
+  padding-bottom: 0.5vw;
+}
+
+a {
+  display: block;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+h4 {
+  font-family: Cambria, Georgia, serif, Candara;
+  font-size: 1.3rem;
+}
+
 main, nav {
   font-family: Cambria, Georgia, serif, Candara;
   font-size: 1.2rem;
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* Sección de Navegación */
+
+
+header {
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2vw;
+}
+
+#nav-head {
+  text-align: center;
+  padding-top: 1em;
 }
 
 nav {
@@ -47,17 +72,6 @@ nav {
   }
 }
 
-main{
-  padding: 1vw 2vw 2vw 26vw;
-}
-
-@media (max-width: 460px) {
-  .main-section {
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-}
-
 #nav-text {
   padding: 0vw 1vw 1vw 1vw;
   width: 100%;
@@ -71,14 +85,6 @@ main{
   margin-bottom: 8em;
 }
 
-p {
-  padding-bottom: 0.5vw;
-}
-
-a {
-  display: block;
-}
-
 .nav-link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.9);
@@ -89,10 +95,24 @@ a {
   color: rgba(255, 85, 0, 0.9);
 }
 
-code {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
+
+/* Sección Main */
+
+
+main{
+  padding: 1vw 2vw 2vw 26vw;
 }
+
+@media (max-width: 460px) {
+  .main-section {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+
+/* Sección Footer */
+
 
 .footer-link {
   color: rgba(0, 0, 0, 0.9);
@@ -102,7 +122,3 @@ code {
   color: rgba(255, 85, 0, 0.9);
 }
 
-h4 {
-  font-family: Cambria, Georgia, serif, Candara;
-  font-size: 1.3rem;
-}
