@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 /*https://republicanaradio.com/wp-content/uploads/2021/09/Cursos_Gratis_y_virtuales_para_estudiantes_de_Ingenieria_de_sistemas_URepublicacanaRadio_emisora_radio_universitaria_estudiar_bogota_colombia_imag1.jpg */
 
+/* VALORES BASE */
+
 :root {
   --color-font: #FFFFFF;
   --color-background: #EDCF68;
   --color-form: rgba(0, 15, 30, 0.6);
   --color-submit: rgba(255, 120, 0, 0.9)
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
@@ -41,9 +44,11 @@ h1 {
   line-height: 1.8;
   font-size: 2.6rem;
 }
+
 p {
   font-size: 1.1rem;
 }
+
 h1,
 p {
   margin-top: 0rem;
@@ -66,14 +71,17 @@ textarea {
   font-size: 0.9rem;
   line-height: 10px;
 }
+
 input,
 textarea {
   border-radius: 0.25%; 
 }
+
 textarea {
   width: 100%;
   border-radius: 1.5%;
 }
+
 button {
   border-width: 1px;
   border-color: rgba(84, 100, 186, 0.5);
@@ -97,6 +105,10 @@ button {
   }
 }
 
+
+/* HEADER */
+
+
 .header {
   padding: 0 0.625rem;
   margin-bottom: 1.875rem;
@@ -114,13 +126,7 @@ button {
   padding: 1rem;
 }
 
-.clue {
-  margin-left: 0.2rem;
-  font-size: 0.9rem;
-  color: #e4e4e4;
-}
-
-
+/* FORMULARIO */
 
 form {
   background: var(--color-form);
@@ -157,6 +163,14 @@ form {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
+.clue {
+  margin-left: 0.2rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+/* VALORES INPUT */
+
 .input-radio,
 .input-checkbox {
   display: inline-block;
@@ -181,3 +195,5 @@ form {
   border-radius: 0.25px;
   cursor: pointer;
 }
+
+
