@@ -5,6 +5,7 @@
   }
   
   /* Tamaño de cuadro */
+
   *,
   *::before,
   *::after {
@@ -77,7 +78,7 @@
     width: 100%;
   }
   
-  /* nav */
+  /* NAV */
   
   .nav {
     display: flex;
